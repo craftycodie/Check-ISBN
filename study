@@ -1,7 +1,7 @@
 # Problem: Check ISBN number
 
 # Initialise the input_list with the given values
-input_list = [1, 0, 0, 9, 0, 5, 0]
+input_list = [9,7,8,0,1,4,1,1,8,3,2,1,3]
 # Initialise other input 
 ISBN_length = 13
 # Initialise the output_list to the empty list 
@@ -10,10 +10,11 @@ output_list = []
 for index, input_value in enumerate(input_list):
     # Transform the input_value into an output_value
     if index % 2 == 0:
-        output_value = input_value
+        output_list.append(input_value)
     else:
-        output_value = input_value * 3 
+        output_list.append(input_value * 3)
 # Print the output_list
+print('Input list:', input_list)
 print('Transformed list:', output_list)
 # Calculate the sum of the item in the transformed list 
 total_sum = sum(output_list)
