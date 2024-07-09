@@ -9,10 +9,10 @@ output_list = []
 # For each input_value in input_list:
 for index, input_value in enumerate(input_list):
     # Transform the input_value into an output_value
-    if index % 2 == 0:
-        output_value = input_value
+    if index + 1 % 2 == 0:
+        output_list.append(input_value)
     else:
-        output_value = input_value * 3 
+        output_list.append(input_value * 3)
 # Print the output_list
 print('Transformed list:', output_list)
 # Calculate the sum of the item in the transformed list 
