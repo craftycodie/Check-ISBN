@@ -1,0 +1,24 @@
+# Problem: Check ISBN number
+
+# Initialise the input_list with the given values
+input_list = [1, 0, 0, 9, 0, 5, 0]
+# Initialise other input 
+ISBN_length = 13
+# Initialise the output_list to the empty list 
+output_list = []
+# For each input_value in input_list:
+for index, input_value in enumerate(input_list):
+    # Transform the input_value into an output_value
+    if index % 2 == 0:
+        output_value = input_value
+    else:
+        output_value = input_value * 3 
+# Print the output_list
+print('Transformed list:', output_list)
+# Calculate the sum of the item in the transformed list 
+total_sum = sum(output_list)
+# Check if the remainder of the sum 
+if total_sum % 10 == 0:
+    print ('The ISBN number {ISBN} is valid')
+else:
+    print ('The ISBN number {ISBN} is invalid')
